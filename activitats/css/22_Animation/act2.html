@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .ferris-wheel {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .ferris-wheel:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(white 10px, transparent 11px), radial-gradient(white 10px, transparent 11px);
+            background-position: 0 0, 25px 25px;
+            background-size: 50px 50px;
+            transform: rotate(45deg);
+        }
+
+        .cabin {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: red;
+            top: 50%;
+            left: 50%;
+            transform-origin: bottom;
+            transform: translate(-50%, -50%) rotate(0);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .cabin-1 {
+            background-color: red;
+            transform: translate(-50%, -50%) rotate(0deg);
+            animation: rotate-ferris-wheel 10s linear infinite;
+        }
+
+        .cabin-2 {
+            background-color: blue;
+            transform: translate(-50%, -50%) rotate(60deg);
+            animation: rotate-ferris-wheel 10s linear infinite;
+        }
+
+        .cabin-3 {
+            background-color: green;
+            transform: translate(-50%, -50%) rotate(120deg);
+            animation: rotate-ferris-wheel 10s linear infinite;
+        }
+
+        .cabin-4 {
+            background-color: yellow;
+            transform: translate(-50%, -50%) rotate(180deg);
+            animation: rotate-ferris-wheel 10s linear infinite;
+        }
+
+        .cabin-5 {
+            background-color: purple;
+            transform: translate(-50%, -50%) rotate(240deg);
+            animation: rotate-ferris-wheel 10s linear infinite;
+        }
+
+        .cabin-6 {
+            background-color: orange;
+            transform: translate(-50%, -50%) rotate(300deg);
+            animation: rotate-ferris-wheel 10s linear infinite;
+        }
+
+        @keyframes rotate-ferris-wheel {
+            0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+            transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="ferris-wheel">
+          <div class="cabin cabin-1"></div>
+          <div class="cabin cabin-2"></div>
+          <div class="cabin cabin-3"></div>
+          <div class="cabin cabin-4"></div>
+          <div class="cabin cabin-5"></div>
+          <div class="cabin cabin-6"></div>
+        </div>
+    </div>
+
+</body>
+</html>

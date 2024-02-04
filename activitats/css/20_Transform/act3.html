@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .circles {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+.red {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
+
+.blue {
+  background-color: rgba(0, 0, 255, 0.5);
+  width: 100px;
+  height: 100px;
+  left: 120px;
+}
+
+.circles:hover .blue {
+  transform: translate(-150%, -50%);
+}
+    </style>
+
+</head>
+<body>
+    
+    <div class="circles">
+        <div class="circle red"></div>
+        <div class="circle blue"></div>
+    </div>
+
+</body>
+</html>

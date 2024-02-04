@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .agranda {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            padding: 20px;
+            transition: transform 0.2s ease;
+            width: 400px;
+            height: 300px;
+            text-align: center
+        }
+
+        .agranda span {
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .agranda:hover span{
+            transform-origin: top;
+            transform: translate(-50%, -50%) scale(4);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <button class="agranda"><span>Casi Recto</span></button>
+    
+</body>
+</html>
