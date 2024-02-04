@@ -7,7 +7,88 @@
 
     <style>
 
-        
+        .reloj {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .hand {
+            position: absolute;
+            display: flex;
+            left: 50%;
+            top: 50%;
+            width: 5px;
+            height: 50%;
+            background-color: black;
+            transform-origin:bottom;
+            transform: translate(-50%, -50%) rotate(0);
+            transition: transform 0.05s ease-in-out;
+            animation: reloj 60s linear infinite;
+        }
+
+        .hora {
+            height: 60%;
+            background-color: blue;
+        }
+
+        .minuto {
+            height: 80%;
+            background-color: black;
+        }
+
+        .segundo {
+            height: 90%;
+            background-color: red;
+        }
+
+        .vista {
+            position: center;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+        }
+
+        .mark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 4px;
+            height: 4px;
+            background-color: black;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) rotate(calc(var(--deg) * 1deg));
+        }
+
+        .hora {
+            width: 5px;
+            height: 200px;
+        }
+
+        .minuto {
+            width: 5px;
+            height: 150px;
+        }
+
+        .segundo {
+            width: 5px;
+            height: 100px;
+        }
+
+        @keyframes reloj {
+            50% {
+                transform: translate(-50%, -50%) rotate(0);
+            }
+            50% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
 
     </style>
 </head>
