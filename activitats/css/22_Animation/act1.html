@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: #f0f0f0;
+            }
+
+        .contenedor {
+            position: relative;
+        }
+
+        .sol, .luna {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .sol {
+            background-color: #ffc107;
+        }
+
+        .luna {
+            background-color: grey;
+            animation: eclipse 5s linear infinite;
+        }
+
+        @keyframes eclipse {
+            0% {
+            transform: translateX(0);
+            }
+            50% {
+            transform: translateX(100px);
+            }
+            100% {
+            transform: translateX(0);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="sol"></div>
+        <div class="luna"></div>
+      </div>
+    
+</body>
+</html>
