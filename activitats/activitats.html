@@ -4,11 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #bc9d9d;
+            color: #000000;
+            
+        }
+
+        header {
+            background-color: #eb9595;
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff4500;
+        }
+
+        #inicio {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .columna {
+            column-count: 2;
+            column-gap: 20px;
+            orphans: 1;
+            widows: 1;
+            list-style: none;
+            padding-right: 1000px;
+        }
+    
+        .columna li {
+            margin-bottom: 10px;
+            border-style: solid;
+            border-color: #000000;
+        }
+
+    </style>
 </head>
 <body>
+
+    <header>
+        <h1>Mi Portafolio</h1>
+    </header>
+
+    <nav>
+        <a href="/activitats/Portfolio.html">Inicio</a>
+        <a href="/activitats/Quiensoy.html">Sobre Mí</a>
+        <a href="/activitats/activitats.html">Proyectos</a>
+        <a href="/activitats/Contacte.html">Contacto</a>
+    </nav>
     
     <h1> HTML </h1>
-    <ul>
+    
+    <ul class="columna">
     <li><a href="html/02_formato/index.html">Formato</a></li>
     <li><a href="html/03_hipervinculos/index.html">Hipervinculos</a></li>
     <li><a href="html/04_Listas/index.html">Listas</a></li>
@@ -20,6 +96,30 @@
     <li><a href="html/11_Interactivos/index.html">Interactivos</a></li>
     <li><a href="html/12_Accessibilidad/index.html">Accesibilidad</a></li>
     </ul>
+    
+    <h1> CSS </h1>
+    <ul class="columna">
+    <li><a href="/activitats/css/03_Selectores/Index.html">Selectores</a></li>
+    <li><a href="/activitats/css/04_Variables/Index.html">Variables</a></li>
+    <li><a href="/activitats/css/06_BEM/Index.html">Bem</a></li>
+    <li><a href="/activitats/css/07_Color/Index.html">Color</a></li>
+    <li><a href="/activitats/css/08_Texto/Index.html">Texto</a></li>
+    <li><a href="/activitats/css/09_Medidas/Index.html">Medidas</a></li>
+    <li><a href="/activitats/css/10_Imagenes/Index.html">Imagenes</a></li>
+    <li><a href="/activitats/css/11_Display/Index.html">Display</a></li>
+    <li><a href="/activitats/css/12_Margin/Index.html">Margin</a></li>
+    <li><a href="/activitats/css/13_Padding/Index.html">Padding</a></li>
+    <li><a href="/activitats/css/14_border/Index.html">Border</a></li>
+    <li><a href="/activitats/css/16_Listas/Index.html">Listas</a></li>
+    <li><a href="/activitats/css/18_Filters/Index.html">Filters</a></li>
+    <li><a href="/activitats/css/20_Transform/Index.html">Transform</a></li>
+    <li><a href="/activitats/css/21_Transition/Index.html">Transition</a></li>
+    <li><a href="/activitats/css/22_Animation/Index.html">Animation</a></li>
+    </ul>
+
+    <footer>
+        &copy; 2023 Mi Portafolio | Diseñado por Axel Ricardo Ruiz Vigo
+    </footer>
 
 </body>
 </html>
