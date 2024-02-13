@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:/C:/Users/draco/Documents/GitHub/web/activitats/rss/atom"?>
+<rss version="2.0">
+<channel>
+  <title>Ultimes Novetats</title>
+  <item>Novetats del mon NINTENDO
+  <link>https://www.nintenderos.com/</link>
+  <description>Ultimes noticies dels videojocs de NINTENDO.</description>
+  <pubDate>08-2-2024</pubDate>
+  </item>
+  <item>
+    <title>Novetats de Microsoft</title>
+    <link>https://news.microsoft.com/source/</link>
+    <description>Ultimes noticies dels videojocs de Microsoft</description>
+    <pubDate>10-2-2024</pubDate>
+  </item>
+  <item>
+    <title>Noticies del Dia</title>
+    <informacio>L'Axel Susprendra Llenguatge de marques i tothom ho sap</informacio>
+    <publicant>Axel Ricardo Ruiz Vigo</publicant>
+    <pubDate>13-02-2024</pubDate>  
+  </item>
+</channel>
+</rss>

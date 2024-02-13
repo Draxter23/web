@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Document</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
             box-sizing: border-box;
             background-color: #bc9d9d;
             color: #000000;
-            display: block;
+            
         }
 
         header {
@@ -41,11 +41,6 @@
             color: #ff4500;
         }
 
-        section {
-            padding: 20px;
-            display: none;
-        }
-
         #inicio {
             display: block;
         }
@@ -56,18 +51,29 @@
             text-align: center;
             padding: 10px;
         }
-        img {
-            float: left;
-            width: 200px;
-            height: 75px;
+
+        .columna {
+            column-count: 2;
+            column-gap: 20px;
+            orphans: 1;
+            widows: 1;
+            list-style: none;
+            padding-right: 1000px;
         }
+    
+        .columna li {
+            margin-bottom: 10px;
+            border-style: solid;
+            border-color: #000000;
+        }
+
     </style>
 </head>
 <body>
 
     <header>
         <a href="rss.html"><img src="RSS LOGO.png"></a>
-        <h1>Mi Portafolio</h1>
+        <h1>Feeds de RSS</h1>
     </header>
 
     <nav>
@@ -77,16 +83,21 @@
         <a href="Contacte.html">Contacto</a>
     </nav>
 
-    <section id="inicio">
-        <h1>Buenos Dias!!</h1>
-        <h3>Axel Ricardo Ruiz Vigo: Tecnico en Sistemas Microinformaticos y Redes</h3>
-        <h5>"No pidas nada sin poner de tu parte</h5>
-
     
-    </section>
-    <footer>
-        &copy; 2023 Mi Portafolio | Diseñado por Axel Ricardo Ruiz Vigo
-    </footer>
 
+    <H2>Ultimes noticies</H3>
+     <h3><a href="https://www.nintenderos.com/">Novetats del mon NINTENDO</a></h3>
+  
+  <p>Nintendo ho pete amb el seu ultim joc de la saga Super Mario.</p>
+  <h3><a href="https://news.microsoft.com/source/">Novetats de Microsoft</a></h3></title>
+ <p>Les Preparacions per el nou trailer de la nova consola de xbox semblent prometedores</p>
+  <h3>Noticies del Dia</h3>
+    <p>L'Axel Susprendra Llenguatge de marques i tothom ho sap</p>
+    <h5>Axel Ricardo Ruiz Vigo</h5>
+    
+
+    <a href="rss/rss">Canal de RSS</a>
+    <a href="">Arxiu Atom</a>
+    
 </body>
 </html>

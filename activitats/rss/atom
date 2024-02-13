@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
+
+  <xsl:template match="/">
+    <feed xmlns="http://www.w3.org/2005/Atom">
+      <xsl:for-each select="root/item">
+        <entry>
+          <title><xsl:value-of select="title"/></title>
+          <content type="html"><xsl:value-of select="content"/></content>
+        </entry>
+      </xsl:for-each>
+    </feed>
+  </xsl:template>
+</xsl:stylesheet>
