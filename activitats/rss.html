@@ -51,22 +51,17 @@
             text-align: center;
             padding: 10px;
         }
-
-        .columna {
-            column-count: 2;
-            column-gap: 20px;
-            orphans: 1;
-            widows: 1;
-            list-style: none;
-            padding-right: 1000px;
-        }
     
         .columna li {
-            margin-bottom: 10px;
-            border-style: solid;
-            border-color: #000000;
+            margin-bottom: 5px;
+            list-style: none;
+            margin-top: 2px;
         }
-
+        img {
+            float: left;
+            width: 200px;
+            height: 75px;
+        }
     </style>
 </head>
 <body>
@@ -92,12 +87,15 @@
   <h3><a href="https://news.microsoft.com/source/">Novetats de Microsoft</a></h3></title>
  <p>Les Preparacions per el nou trailer de la nova consola de xbox semblent prometedores</p>
   <h3>Noticies del Dia</h3>
-    <p>L'Axel Susprendra Llenguatge de marques i tothom ho sap</p>
-    <h5>Axel Ricardo Ruiz Vigo</h5>
+    <p>L'Axel susprendra Llenguatge de marques i tothom ho sap</p>
+    <a href="https://raw.githubusercontent.com/Draxter23/web/main/activitats/rss/rss"><img src="LOGO RSS.png" alt=""></a>
+    <p>Comentario escrito por Axel Ricardo Ruiz Vigo</p>
     
-
-    <a href="https://raw.githubusercontent.com/Draxter23/web/main/activitats/rss/rss">Canal de RSS</a>
-    <a href="rss/atom">Arxiu Atom</a>
-    
+    <p>Feeds de rss per a descargar</p>
+    <ul class="columna">
+        <li><a href="https://raw.githubusercontent.com/Draxter23/web/main/activitats/rss/rss">Canal de RSS</a></li>
+        <li><a href="https://raw.githubusercontent.com/Draxter23/web/main/activitats/rss/rssatom">Canal d'arxiu Atom</a></li>
+        <li><a href="https://rss.app/feeds/UVZVgIicyoErzkxB.xml">The Wild Project Podcasts</a></li>
+    </ul>    
 </body>
 </html>
